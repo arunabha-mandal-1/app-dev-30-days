@@ -1,0 +1,1 @@
+This repository contains all the codes/projects of "30 days of app development".
