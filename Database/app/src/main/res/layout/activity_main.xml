@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/signup_background"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -25,13 +27,13 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="10dp"
         android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/baseline_person_24"
         android:ems="10"
         android:hint="  Enter your Name"
         android:inputType="text"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textStyle="bold"
-        android:drawableStart="@drawable/baseline_person_24"/>
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -40,13 +42,13 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="10dp"
         android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/baseline_lock_24"
         android:ems="10"
         android:hint=" Enter your Password"
         android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textStyle="bold"
-        android:drawableStart="@drawable/baseline_lock_24"/>
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etEmail"
@@ -55,13 +57,13 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="10dp"
         android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/baseline_email_24"
         android:ems="10"
         android:hint="  Enter your Email address"
         android:inputType="textEmailAddress"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textStyle="bold"
-        android:drawableStart="@drawable/baseline_email_24"/>
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etUserID"
@@ -70,13 +72,13 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="10dp"
         android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/baseline_verified_user_24"
         android:ems="10"
         android:hint="  Enter unique User ID"
         android:inputType="text"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textStyle="bold"
-        android:drawableStart="@drawable/baseline_verified_user_24"/>
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnSignUp"
@@ -84,10 +86,21 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:text="Sign Up"
-        android:textStyle="bold"
         android:backgroundTint="#FFFFFF"
-        android:textColor="@color/black"/>
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:text="If already registered, click SIGN IN" />
 
 
 </LinearLayout>

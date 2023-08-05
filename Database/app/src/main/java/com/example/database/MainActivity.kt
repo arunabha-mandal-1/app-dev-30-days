@@ -1,9 +1,11 @@
 package com.example.database
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.google.firebase.database.DatabaseReference
@@ -30,16 +32,21 @@ class MainActivity : ComponentActivity() {
             val user = User(etName, etEmail, password, uniqueId)
             database = FirebaseDatabase.getInstance().getReference("Users")
             database.child(uniqueId).setValue(user).addOnSuccessListener {
-                name.text.clear()
-                email.text.clear()
-                userId.text.clear()
-                userPassword.text.clear()
+                name.text?.clear()
+                email.text?.clear()
+                userId.text?.clear()
+                userPassword.text?.clear()
                 Toast.makeText(this, "User Registered", Toast.LENGTH_SHORT).show()
                 Log.i("Firebase", "$uniqueId added")
             }.addOnFailureListener {
                 Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
                 Log.i("Firebase", "Failed to add $uniqueId")
             }
+        }
+        val signInText = findViewById<TextView>(R.id.tvSignIn)
+        signInText.setOnClickListener{
+            val intentSignIn = Intent(this, SignInActivity::class.java)
+            startActivity(intentSignIn)
         }
     }
 }

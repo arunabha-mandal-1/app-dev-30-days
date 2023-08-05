@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/signup_background"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="100dp"
+        android:text="Welcome,\nSign In to continue"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/userNameEt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="  Enter unique User ID"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/baseline_verified_user_24"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Sign In"
+        android:textStyle="bold"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>
