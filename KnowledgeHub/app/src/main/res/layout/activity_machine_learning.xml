@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MachineLearningActivity">
+
+
+    <TextView
+        android:id="@+id/tvMlIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:text="Machine Learning"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvStatProb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/tech_shape"
+            android:text="Statistics &amp; Probability"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvPython"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/tech_shape"
+            android:text="Python"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvScikitLearn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tech_shape"
+            android:gravity="center"
+            android:text="scikit-learn"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvAlgo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/tech_shape"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Algorithms"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvLinearAlgebra"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tech_shape"
+            android:gravity="center"
+            android:text="Linear Algebra"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/tvCalculus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/tech_shape"
+            android:gravity="center"
+            android:text="Calculus"
+            android:textSize="22dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMachineLearning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center"
+        android:text="Call Machine Learning Expert"
+        android:textColor="#042D5C"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

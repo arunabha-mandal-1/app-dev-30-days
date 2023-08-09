@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WebActivity">
+
+
+    <TextView
+        android:id="@+id/tvWebIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:text="Web Development"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvHtmlCss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/tech_shape"
+            android:text="HTML &amp; CSS"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvJs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/tech_shape"
+            android:text="Javascript"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNodeDjango"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tech_shape"
+            android:gravity="center"
+            android:text="Node/Django"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvDatabase"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/tech_shape"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Database"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDesign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tech_shape"
+            android:gravity="center"
+            android:text="Design"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvDeployment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/tech_shape"
+            android:gravity="center"
+            android:text="Deployment"
+            android:textSize="22dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnWebDev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center"
+        android:text="Call Web Development Expert"
+        android:textColor="#042D5C"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
